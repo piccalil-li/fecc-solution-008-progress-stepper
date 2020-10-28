@@ -114,3 +114,15 @@ body {
   z-index: 1;
 }
 
+.stepper strong::before {
+  content: counter(steps, decimal-leading-zero);
+  speak-as: numbers;
+  font-family: var(--font-condensed);
+  font-weight: 900;
+  color: var(--color-secondary-glare);
+  position: absolute;
+  bottom: 2ex;
+  left: -1ch;
+  z-index: -1;
+  line-height: 1;
+}
