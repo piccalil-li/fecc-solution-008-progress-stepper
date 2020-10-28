@@ -36,3 +36,19 @@ body {
   min-width: 20rem;
   counter-reset: steps;
 }
+
+.stepper [role='list'] {
+  font-family: var(--font-condensed);
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin: calc(var(--stepper-y-space) * -1) 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stepper li {
+  padding-left: var(--stepper-x-space);
+  padding-top: var(--stepper-y-space);
+  position: relative;
+  counter-increment: steps;
+}
