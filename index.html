@@ -10,6 +10,25 @@
   <link rel="stylesheet" href="/css/global.css" />
 </head>
 <body>
-
+  <div class="stepper">
+    <ol role="list" aria-label="Purchase steps">
+      <li data-status="complete">
+        <span aria-hidden="true">Step one</span>
+        <strong>Your basket</strong>
+      </li>
+      <li data-status="complete">
+        <span aria-hidden="true">Step two</span>
+        <strong>Your details</strong>
+      </li>
+      <li aria-current="step">
+        <span aria-hidden="true">Step three</span>
+        <strong>Payment</strong>
+      </li>
+      <li>
+        <span aria-hidden="true">Step four</span>
+        <strong>Order complete</strong>
+      </li>
+    </ol>
+  </div>
 </body>
 </html>
