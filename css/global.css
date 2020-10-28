@@ -23,3 +23,16 @@ body {
   display: grid;
   place-items: center;
 }
+
+.stepper {
+  --stepper-y-space: var(--size-500);
+  --stepper-x-space: var(--size-700);
+  --stepper-modifier: 1.5ex;
+
+  border: 1px solid var(--color-secondary-glare);
+  padding: var(--size-600);
+  box-shadow: var(--shadow);
+  border-radius: var(--size-400);
+  min-width: 20rem;
+  counter-reset: steps;
+}
