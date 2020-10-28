@@ -126,3 +126,17 @@ body {
   z-index: -1;
   line-height: 1;
 }
+
+.stepper [aria-current='step'] strong::after {
+  background-color: var(--color-primary-glare);
+  border-color: var(--color-primary);
+}
+
+.stepper [data-status='complete'] strong::after {
+  background-color: var(--color-primary);
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" width="9" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M7.868.141a.474.474 0 01.03.652L3.244 6.087a.433.433 0 01-.627.028L.292 3.911a.474.474 0 01-.03-.652.433.433 0 01.628-.028l1.996 1.892L7.24.17A.433.433 0 017.868.14z"/></svg>');
+  background-size: 9px 7px;
+  background-position: 3px center;
+  background-repeat: no-repeat;
+  border-color: var(--color-primary);
+}
