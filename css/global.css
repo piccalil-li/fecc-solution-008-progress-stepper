@@ -74,3 +74,18 @@ body {
   height: 100%;
   top: calc(var(--stepper-y-space) + var(--stepper-modifier));
 }
+
+.stepper li[aria-current='step']::before {
+  display: block;
+}
+
+.stepper li[data-status='complete']::after,
+.stepper li[data-status='complete']::before {
+  display: block;
+}
+
+/* Always hide the top up line and the bottom down line */
+.stepper li:first-child::before,
+.stepper li:last-child::after {
+  display: none;
+}
