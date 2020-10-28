@@ -52,3 +52,25 @@ body {
   position: relative;
   counter-increment: steps;
 }
+
+.stepper li::before,
+.stepper li::after {
+  display: none;
+  content: '';
+  width: 2px;
+  background: var(--color-primary);
+  position: absolute;
+  left: 7px;
+}
+
+/* Up line */
+.stepper li::before {
+  height: calc(var(--stepper-y-space) + var(--stepper-modifier));
+  top: 0;
+}
+
+/* Down line */
+.stepper li::after {
+  height: 100%;
+  top: calc(var(--stepper-y-space) + var(--stepper-modifier));
+}
