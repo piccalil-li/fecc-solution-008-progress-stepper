@@ -89,3 +89,28 @@ body {
 .stepper li:last-child::after {
   display: none;
 }
+
+.stepper strong {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: var(--size-500);
+  text-transform: none;
+  position: relative;
+}
+
+/* Dot */
+.stepper strong::after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: var(--color-secondary-glare);
+  position: absolute;
+  bottom: 100%;
+  left: calc(var(--stepper-x-space) * -1);
+  border: 1px solid var(--color-secondary);
+  transform: translateY(50%);
+  z-index: 1;
+}
+
